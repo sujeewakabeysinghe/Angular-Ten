@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 
-import { ModuleModule } from './module/module.module'
+import { ModuleModule } from './module/module.module';
+import { ClickFunctionComponent } from './click-function/click-function.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    ClickFunctionComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
