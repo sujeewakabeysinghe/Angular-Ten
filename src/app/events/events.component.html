@@ -1,0 +1,21 @@
+<button (click)="hello('My name is Sujeewa')">My Name!</button>
+<br><br>
+<input type="text" placeholder="keyup" (keyup)="hello('keyup happens after release the pressed button')">
+<br><br>
+<input type="text" placeholder="keydown" (keydown)="hello('keyup happens after release the pressed button')">
+<br><br>
+<input type="text" placeholder="keyup console" #one (keyup)="hello(one.value)">
+<br><br>
+<input type="text" placeholder="keydown console" #two (keydown)="hello(two.value)">
+<br><br>
+<input type="text" placeholder="keyup enter" #three (keyup.enter)="hello(three.value)">
+<br><br>
+<input type="text" placeholder="keyup space" #four (keyup.space)="hello(four.value)">
+<br><br>
+<input type="text" placeholder="blur" #five (blur)="hello('click outside after type')">
+<br><br>
+<input type="text" placeholder="blur console" #six (blur)="hello(six.value)">
+<br><br>
+<h4 style="background-color: antiquewhite;" (mouseover)="hello('go over this')">Mouse Over</h4>
+<br><br>
+<h4 style="background-color: burlywood;" (mouseleave)="hello('move away from this')">Mouse Leave</h4>
