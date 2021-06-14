@@ -1,0 +1,11 @@
+<button style="background-color: red;" (click)="red()">Red</button>
+<br><br>
+<button style="background-color: green;" (click)="green()">Green</button>
+<br><br>
+<button style="background-color: yellow;" (click)="yellow()">Yellow</button>
+<div [ngSwitch]=color>
+    <h3 style="color: red;" *ngSwitchCase="'red'">Red</h3>
+    <h3 style="color: green;" *ngSwitchCase="'green'">Green</h3>
+    <h3 style="color: yellow;" *ngSwitchCase="'yellow'">Yellow</h3>
+    <h3 style="color: grey;" *ngSwitchDefault>Default</h3>
+</div>

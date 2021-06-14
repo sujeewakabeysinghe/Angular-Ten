@@ -10,7 +10,8 @@ import { ClickFunctionComponent } from './click-function/click-function.componen
 import { EventsComponent } from './events/events.component';
 import { GetInputValueComponent } from './get-input-value/get-input-value.component';
 import { PropertyBindComponent } from './property-bind/property-bind.component';
-import { ConditionalStatementComponent } from './conditional-statement/conditional-statement.component'
+import { ConditionalStatementComponent } from './conditional-statement/conditional-statement.component';
+import { SwitchCaseComponent } from './switch-case/switch-case.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ConditionalStatementComponent } from './conditional-statement/condition
     EventsComponent,
     GetInputValueComponent,
     PropertyBindComponent,
-    ConditionalStatementComponent
+    ConditionalStatementComponent,
+    SwitchCaseComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
