@@ -1,0 +1,18 @@
+<div *ngFor="let myColor of colors">
+    <li>{{myColor}}</li>
+</div>
+<hr>
+<div *ngFor="let mydata of data">
+    <li>Name : {{mydata.name}} | Age : {{mydata.age}}</li>
+</div>
+<hr>
+<table border="1">
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+    </tr>
+    <tr *ngFor="let tableData of data">
+        <td>{{tableData.name}}</td>
+        <td>{{tableData.age}}</td>
+    </tr>
+</table>

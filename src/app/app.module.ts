@@ -11,7 +11,8 @@ import { EventsComponent } from './events/events.component';
 import { GetInputValueComponent } from './get-input-value/get-input-value.component';
 import { PropertyBindComponent } from './property-bind/property-bind.component';
 import { ConditionalStatementComponent } from './conditional-statement/conditional-statement.component';
-import { SwitchCaseComponent } from './switch-case/switch-case.component'
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
+import { ForLoopComponent } from './for-loop/for-loop.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SwitchCaseComponent } from './switch-case/switch-case.component'
     GetInputValueComponent,
     PropertyBindComponent,
     ConditionalStatementComponent,
-    SwitchCaseComponent
+    SwitchCaseComponent,
+    ForLoopComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
