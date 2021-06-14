@@ -1,0 +1,33 @@
+<button (click)="change()">Show It!</button>
+<h3 *ngIf=show>If Block</h3>
+<br><br>
+<button (click)="changeTwo()">Show It!</button>
+<h3 *ngIf="showTwo else myElse">If Block</h3>
+<ng-template #myElse>
+    <h3>Else Block</h3>
+</ng-template>
+<br><br>
+<button (click)="changeThree()">Show It!</button>
+<h3 *ngIf="showThree=='yes' else myElseTwo">If Block</h3>
+<ng-template #myElseTwo>
+    <h3>Else Block</h3>
+</ng-template>
+<br><br>
+<button (click)="changeFour()">Show It!</button>
+<h3 *ngIf="showFour=='yes'; then myIf else myElseTwo"></h3>
+<ng-template #myIf>
+    <h3>If Block</h3>
+</ng-template>
+<ng-template #myElseTwo>
+    <h3>Else Block</h3>
+</ng-template>
+<hr>
+<ng-template [ngIf]="color=='red'">
+    <h3>Red</h3>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+    <h3>Green</h3>
+</ng-template>
+<ng-template [ngIf]="color=='yellow'">
+    <h3>Yellow</h3>
+</ng-template>
