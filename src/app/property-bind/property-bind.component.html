@@ -1,0 +1,12 @@
+<input type="text" value="Hello!">
+<br><br>
+<input type="text" placeholder="interpolation" value={{name}}>
+<br><br>
+<input type="text" placeholder="property binding" [value]=name>
+<br><br>
+<input type="text" disabled={{dis}} value="Hello!">
+<br><br>
+<input type="text" [disabled]=dis value="Hello!">
+<br><br>
+<button (click)="disThis()">Disable This!</button>
+<!--property bined can handle the disable but interpolation cannot do it-->

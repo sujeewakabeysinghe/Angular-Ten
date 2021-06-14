@@ -8,7 +8,8 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { ModuleModule } from './module/module.module';
 import { ClickFunctionComponent } from './click-function/click-function.component';
 import { EventsComponent } from './events/events.component';
-import { GetInputValueComponent } from './get-input-value/get-input-value.component'
+import { GetInputValueComponent } from './get-input-value/get-input-value.component';
+import { PropertyBindComponent } from './property-bind/property-bind.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GetInputValueComponent } from './get-input-value/get-input-value.compon
     InterpolationComponent,
     ClickFunctionComponent,
     EventsComponent,
-    GetInputValueComponent
+    GetInputValueComponent,
+    PropertyBindComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
