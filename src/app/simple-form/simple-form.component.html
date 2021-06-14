@@ -1,0 +1,9 @@
+<form #myForm=ngForm (ngSubmit)="get(myForm.value)">
+    <input type="text" ngModel placeholder="name" name="name">
+    <br><br>
+    <input type="number" ngModel placeholder="age" name="age">
+    <br><br>
+    <input type="password" ngModel placeholder="password" name="password">
+    <br><br>
+    <button>Submit</button>
+</form>
