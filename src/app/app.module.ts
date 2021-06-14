@@ -7,14 +7,16 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 
 import { ModuleModule } from './module/module.module';
 import { ClickFunctionComponent } from './click-function/click-function.component';
-import { EventsComponent } from './events/events.component'
+import { EventsComponent } from './events/events.component';
+import { GetInputValueComponent } from './get-input-value/get-input-value.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     InterpolationComponent,
     ClickFunctionComponent,
-    EventsComponent
+    EventsComponent,
+    GetInputValueComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,

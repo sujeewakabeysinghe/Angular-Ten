@@ -1,0 +1,6 @@
+<input type="text" (keyup)="get($event.target)">
+<h3>{{name}}</h3>
+<br><br>
+<input type="text" #one>
+<br><br>
+<button (click)="getTwo(one.value)">Get Value!</button>
