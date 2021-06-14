@@ -14,7 +14,8 @@ import { PropertyBindComponent } from './property-bind/property-bind.component';
 import { ConditionalStatementComponent } from './conditional-statement/conditional-statement.component';
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
-import { SimpleFormComponent } from './simple-form/simple-form.component'
+import { SimpleFormComponent } from './simple-form/simple-form.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SimpleFormComponent } from './simple-form/simple-form.component'
     ConditionalStatementComponent,
     SwitchCaseComponent,
     ForLoopComponent,
-    SimpleFormComponent
+    SimpleFormComponent,
+    StyleBindingComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,

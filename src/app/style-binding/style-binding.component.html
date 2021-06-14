@@ -1,0 +1,12 @@
+<h3 style="color:coral;">Hello!</h3>
+<h3 [style.color]="'orange'">Hello!</h3>
+<h3 [style.color]=myColor>Hello!</h3>
+<button (click)="change()">Change Color!</button>
+<br><br>
+<hr>
+<h3 [style.color]="condition ? 'coral' : 'cornflowerblue'">Hello!</h3>
+<button (click)="changeTwo()">Change Color!</button>
+<br><br>
+<hr>
+<h3 [style.color]="conditionTwo ? colorOne : colorTwo">Hello!</h3>
+<button (click)="changeThree()">Change Color!</button>
