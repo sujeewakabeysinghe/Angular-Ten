@@ -15,7 +15,9 @@ import { ConditionalStatementComponent } from './conditional-statement/condition
 import { SwitchCaseComponent } from './switch-case/switch-case.component';
 import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
-import { StyleBindingComponent } from './style-binding/style-binding.component'
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './parent/child/child.component'
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { StyleBindingComponent } from './style-binding/style-binding.component'
     SwitchCaseComponent,
     ForLoopComponent,
     SimpleFormComponent,
-    StyleBindingComponent
+    StyleBindingComponent,
+    ParentComponent,
+    ChildComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
