@@ -17,7 +17,9 @@ import { ForLoopComponent } from './for-loop/for-loop.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { ParentComponent } from './parent/parent.component';
-import { ChildComponent } from './parent/child/child.component'
+import { ChildComponent } from './parent/child/child.component';
+import { ParentTwoComponent } from './parent-two/parent-two.component';
+import { ChildTwoComponent } from './parent-two/child-two/child-two.component'
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ChildComponent } from './parent/child/child.component'
     SimpleFormComponent,
     StyleBindingComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    ParentTwoComponent,
+    ChildTwoComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
