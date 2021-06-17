@@ -20,7 +20,10 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { ParentTwoComponent } from './parent-two/parent-two.component';
 import { ChildTwoComponent } from './parent-two/child-two/child-two.component';
-import { PipesComponent } from './pipes/pipes.component'
+import { PipesComponent } from './pipes/pipes.component';
+import { RoutingOneComponent } from './routing/routing-one/routing-one.component';
+import { RoutingTwoComponent } from './routing/routing-two/routing-two.component';
+import { FourZeroFourComponent } from './routing/four-zero-four/four-zero-four.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { PipesComponent } from './pipes/pipes.component'
     ChildComponent,
     ParentTwoComponent,
     ChildTwoComponent,
-    PipesComponent
+    PipesComponent,
+    RoutingOneComponent,
+    RoutingTwoComponent,
+    FourZeroFourComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
