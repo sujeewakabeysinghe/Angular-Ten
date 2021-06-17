@@ -19,7 +19,8 @@ import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './parent/child/child.component';
 import { ParentTwoComponent } from './parent-two/parent-two.component';
-import { ChildTwoComponent } from './parent-two/child-two/child-two.component'
+import { ChildTwoComponent } from './parent-two/child-two/child-two.component';
+import { PipesComponent } from './pipes/pipes.component'
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ChildTwoComponent } from './parent-two/child-two/child-two.component'
     ParentComponent,
     ChildComponent,
     ParentTwoComponent,
-    ChildTwoComponent
+    ChildTwoComponent,
+    PipesComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
