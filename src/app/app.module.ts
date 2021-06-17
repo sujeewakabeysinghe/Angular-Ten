@@ -24,7 +24,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { RoutingOneComponent } from './routing/routing-one/routing-one.component';
 import { RoutingTwoComponent } from './routing/routing-two/routing-two.component';
 import { FourZeroFourComponent } from './routing/four-zero-four/four-zero-four.component';
-import { CustomDirectiveDirective } from './custom-directive.directive'
+import { CustomDirectiveDirective } from './custom-directive.directive';
+import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces.component'
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { CustomDirectiveDirective } from './custom-directive.directive'
     RoutingOneComponent,
     RoutingTwoComponent,
     FourZeroFourComponent,
-    CustomDirectiveDirective
+    CustomDirectiveDirective,
+    ModelsInterfacesComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
