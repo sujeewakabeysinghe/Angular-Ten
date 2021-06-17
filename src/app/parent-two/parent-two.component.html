@@ -1,1 +1,3 @@
-<app-child-two [xyz]="myFunction()"></app-child-two>
+<app-child-two (xyz)="myFunction($event)"></app-child-two>
+<h3>{{name}}</h3>
+<h3>{{age}}</h3>

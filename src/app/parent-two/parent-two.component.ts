@@ -7,13 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentTwoComponent implements OnInit {
 
+  name :any
+  age : any
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   myFunction(data :any){
-    console.log(data)
+    this.name = data.name
+    this.age = data.age
   }
 
 }

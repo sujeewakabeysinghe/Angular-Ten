@@ -1,1 +1,7 @@
-<p>child-two works!</p>
+<form #myForm=ngForm (ngSubmit)="sendData(myForm.value)">
+    <input type="text" ngModel name="name">
+    <br><br>
+    <input type="number" ngModel name="age">
+    <br><br>
+    <button>Send Data!</button>
+</form>
