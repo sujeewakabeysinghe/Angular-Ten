@@ -27,7 +27,8 @@ import { FourZeroFourComponent } from './routing/four-zero-four/four-zero-four.c
 import { CustomDirectiveDirective } from './custom-directive.directive';
 import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces.component';
 
-import { AdvancedModuleModule } from './advanced-module/advanced-module.module' //imported sub module
+import { AdvancedModuleModule } from './advanced-module/advanced-module.module';
+import { AdvancedRoutingModuleModule } from './advanced-routing-module/advanced-routing-module.module'
 
 @NgModule({
   declarations: [
@@ -51,7 +52,7 @@ import { AdvancedModuleModule } from './advanced-module/advanced-module.module' 
     RoutingTwoComponent,
     FourZeroFourComponent,
     CustomDirectiveDirective,
-    ModelsInterfacesComponent
+    ModelsInterfacesComponent,
   ], //all the components contain in this module
   imports: [
     BrowserModule,
@@ -59,6 +60,7 @@ import { AdvancedModuleModule } from './advanced-module/advanced-module.module' 
     ModuleModule, //added the created module to access things inside it
     FormsModule, //to implement forms we need to import this
     AdvancedModuleModule, //added the created sub module to access things inside it
+    AdvancedRoutingModuleModule, //added the created sub module to access things inside it
   ],
   providers: [],
   bootstrap: [AppComponent] //which component want to show from this module

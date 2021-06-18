@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'one', component: OneComponent }, //sub module component added same like before
   { path: 'two', component: TwoComponent }, //sub module component added same like before
 
-  { path: '**' , component : FourZeroFourComponent } //this one shoud be the last one always
+  //{ path: '**' , component : FourZeroFourComponent } //this one shoud be the last one always
 ];
 
 @NgModule({
