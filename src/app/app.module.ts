@@ -30,6 +30,9 @@ import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces
 import { AdvancedModuleModule } from './advanced-module/advanced-module.module';
 import { AdvancedRoutingModuleModule } from './advanced-routing-module/advanced-routing-module.module'
 
+import { GroupRoutingOneModule } from './group-routing-one/group-routing-one.module';
+import { GroupRoutingTwoModule } from './group-routing-two/group-routing-two.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,6 +64,8 @@ import { AdvancedRoutingModuleModule } from './advanced-routing-module/advanced-
     FormsModule, //to implement forms we need to import this
     AdvancedModuleModule, //added the created sub module to access things inside it
     AdvancedRoutingModuleModule, //added the created sub module to access things inside it
+    GroupRoutingOneModule,
+    GroupRoutingTwoModule
   ],
   providers: [],
   bootstrap: [AppComponent] //which component want to show from this module
