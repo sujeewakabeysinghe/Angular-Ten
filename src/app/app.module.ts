@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 
-import { ModuleModule } from './module/module.module';
+import { ModuleModule } from './module/module.module'; //imported sub module
 import { ClickFunctionComponent } from './click-function/click-function.component';
 import { EventsComponent } from './events/events.component';
 import { GetInputValueComponent } from './get-input-value/get-input-value.component';
@@ -25,7 +25,9 @@ import { RoutingOneComponent } from './routing/routing-one/routing-one.component
 import { RoutingTwoComponent } from './routing/routing-two/routing-two.component';
 import { FourZeroFourComponent } from './routing/four-zero-four/four-zero-four.component';
 import { CustomDirectiveDirective } from './custom-directive.directive';
-import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces.component'
+import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces.component';
+
+import { AdvancedModuleModule } from './advanced-module/advanced-module.module' //imported sub module
 
 @NgModule({
   declarations: [
@@ -56,6 +58,7 @@ import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces
     AppRoutingModule,
     ModuleModule, //added the created module to access things inside it
     FormsModule, //to implement forms we need to import this
+    AdvancedModuleModule, //added the created sub module to access things inside it
   ],
   providers: [],
   bootstrap: [AppComponent] //which component want to show from this module
