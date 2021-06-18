@@ -16,6 +16,9 @@ const routes: Routes = [
   { path: 'two', component: TwoComponent }, //sub module component added same like before
 
   //{ path: '**' , component : FourZeroFourComponent } //this one shoud be the last one always
+
+  { path: 'lazy', loadChildren:()=>import('./lazy-loading/lazy-loading.module').then(myModule=>myModule.LazyLoadingModule) } //this is the only place where this need to import, don't add in app module
+
 ];
 
 @NgModule({
