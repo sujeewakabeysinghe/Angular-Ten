@@ -26,12 +26,15 @@ import { RoutingTwoComponent } from './routing/routing-two/routing-two.component
 import { FourZeroFourComponent } from './routing/four-zero-four/four-zero-four.component';
 import { CustomDirectiveDirective } from './custom-directive.directive';
 import { ModelsInterfacesComponent } from './models-interfaces/models-interfaces.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component'
 
 import { AdvancedModuleModule } from './advanced-module/advanced-module.module';
 import { AdvancedRoutingModuleModule } from './advanced-routing-module/advanced-routing-module.module'
 
 import { GroupRoutingOneModule } from './group-routing-one/group-routing-one.module';
 import { GroupRoutingTwoModule } from './group-routing-two/group-routing-two.module';
+
+import { ReactiveFormsModule } from'@angular/forms';
 
 @NgModule({
   declarations: [
@@ -56,6 +59,7 @@ import { GroupRoutingTwoModule } from './group-routing-two/group-routing-two.mod
     FourZeroFourComponent,
     CustomDirectiveDirective,
     ModelsInterfacesComponent,
+    ReactiveFormComponent
   ], //all the components contain in this module
   imports: [
     BrowserModule,
@@ -65,7 +69,8 @@ import { GroupRoutingTwoModule } from './group-routing-two/group-routing-two.mod
     AdvancedModuleModule, //added the created sub module to access things inside it
     AdvancedRoutingModuleModule, //added the created sub module to access things inside it
     GroupRoutingOneModule,
-    GroupRoutingTwoModule
+    GroupRoutingTwoModule,
+    ReactiveFormsModule //added this to create reactive forms
   ],
   providers: [],
   bootstrap: [AppComponent] //which component want to show from this module
